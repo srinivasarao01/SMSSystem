@@ -1,0 +1,31 @@
+package com.sms.discoveryclient;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.ApplicationContext;
+
+import com.sms.discoveryclient.manager.SMSApiManager;
+
+@SpringBootApplication
+@EnableDiscoveryClient
+public class SmsDiscoveryClientApplication {
+
+	public static void main(String[] args) {
+		ApplicationContext context = SpringApplication.run(SmsDiscoveryClientApplication.class, args);
+
+		SMSApiManager smsApiManager = context.getBean(SMSApiManager.class);
+		smsApiManager.getStudentDetails(1);
+		
+
+		/*
+		 * List<ServiceInstance> serviceInstances =
+		 * smsApiDiscoveryManager.getSMSServiceInstances();
+		 * 
+		 * serviceInstances .forEach(si ->
+		 * System.out.println("SMS Ports are running with :" + si.getHost() + ":" +
+		 * si.getPort()));
+		 */
+	}
+
+}

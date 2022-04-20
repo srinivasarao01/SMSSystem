@@ -1,0 +1,5 @@
+package com.sms.discoveryclient.manager;
+
+public class SMSApiDiscoveryManager {
+
+}

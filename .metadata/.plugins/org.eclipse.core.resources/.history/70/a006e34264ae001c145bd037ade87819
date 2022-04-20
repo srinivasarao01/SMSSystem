@@ -1,0 +1,10 @@
+package com.test.testappl;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class TestA {
+	
+	@Value("${name}")
+	private String name;
+
+}

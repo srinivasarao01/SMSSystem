@@ -1,0 +1,5 @@
+package com.sms.client.manager;
+
+public class SMSApiManager {
+
+}

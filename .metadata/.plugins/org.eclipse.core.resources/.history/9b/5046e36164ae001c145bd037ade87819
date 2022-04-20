@@ -1,0 +1,14 @@
+package com.test.testappl;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TestAtValueApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TestAtValueApplication.class, args);
+		System.out.println("Test At Value..");
+	}
+
+}

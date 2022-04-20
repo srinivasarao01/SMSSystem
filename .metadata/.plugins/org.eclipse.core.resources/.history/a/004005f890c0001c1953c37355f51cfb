@@ -1,0 +1,13 @@
+package com.sms.discoveryclient;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class SmsDiscoveryClientApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

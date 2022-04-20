@@ -1,0 +1,19 @@
+package com.sms.client;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.ApplicationContext;
+
+import com.sms.client.manager.SMSApiDiscoveryManager;
+
+@SpringBootApplication
+@EnableDiscoveryClient
+public class SmsClientApplication {
+
+	public static void main(String[] args) {
+		 ApplicationContext context = SpringApplication.run(SmsClientApplication.class, args);
+		 SMSApiDiscoveryManager apiDiscoveryManager = context.getBean(SMSApiDiscoveryManager.class);
+	}
+
+}
