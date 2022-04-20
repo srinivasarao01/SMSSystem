@@ -1,0 +1,20 @@
+server:
+  port: 8888
+  
+spring:
+  application:
+    name: studentmanagementsystem
+    
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/srinivasarao01/SMSConfigServer.git
+          username: srinivasarao01
+          password: Pulsar@150150
+          refresh-rate: 100
+          
+  security:
+    user:
+      name: welcome
+      password: welcome1

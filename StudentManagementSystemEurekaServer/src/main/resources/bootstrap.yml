@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: sms-eureka
+    
+  cloud:
+    config:
+      username: welcome
+      password: welcome1
+      uri: http://localhost:8888/ 
